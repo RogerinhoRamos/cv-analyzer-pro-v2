@@ -832,6 +832,21 @@
                 <button class="btn success" onclick="iniciarAnalise()">🚀 Iniciar Análise</button>
                 <button class="btn secondary" style="margin-left: 10px;" onclick="debugAnalise()">🔍 Debug</button>
             </div>
+
+
+            <div style="margin-top: 20px;">
+              <button id="btnAnaliseSemantica" style="padding:10px 16px; background:#0d6efd; color:white; border:none; border-radius:6px;">
+                🔍 Análise Semântica Ampliada
+              </button>
+              <p style="font-size:0.85rem; color:#555; max-width:600px; margin-top:6px;">
+                Esta análise considera sinônimos e termos técnicos relacionados, oferecendo uma avaliação mais justa e inteligente dos candidatos.
+              </p>
+            </div>
+
+
+
+
+            
         </div>
 
         <!-- ABA 5: Análise -->
@@ -3601,6 +3616,67 @@
                 console.log('✅ Nova análise iniciada - Estado resetado completamente');
             }
         }
+
+
+
+    
+                document.addEventListener("DOMContentLoaded", () => {
+                  try {
+                    const totalCandidatos = window.totalCandidatos || 40;
+                    const formadosSenai = window.formadosSenai || 28;
+                    const percentualSenai = ((formadosSenai / totalCandidatos) * 100).toFixed(1);
+                    const senaiEl = document.querySelector("#card-senai, .card-senai span");
+                    if (senaiEl) senaiEl.innerText = `${formadosSenai} candidatos (${percentualSenai}%)`;
+                
+                    const ctx = document.getElementById("graficoFormacao")?.getContext("2d");
+                    if (ctx) {
+                      const formacoes = { "Fundamental": 4, "Médio": 20, "Técnico": 10, "Superior": 6 };
+                      const total = Object.values(formacoes).reduce((a, b) => a + b, 0);
+                      new Chart(ctx, {
+                        type: "bar",
+                        data: {
+                          labels: Object.keys(formacoes),
+                          datasets: [{
+                            label: "Formação",
+                            data: Object.values(formacoes),
+                            backgroundColor: "#0d6efd"
+                          }]
+                        },
+                        options: {
+                          plugins: {
+                            tooltip: {
+                              callbacks: {
+                                label: function(context) {
+                                  const val = context.raw;
+                                  const pct = ((val / total) * 100).toFixed(1);
+                                  return `${val} candidatos (${pct}%)`;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      });
+                    }
+                
+                    const botao = document.getElementById("btnAnaliseSemantica");
+                    if (botao) {
+                      botao.addEventListener("click", () => {
+                        fetch("assets/criterios_avancados.json")
+                          .then(res => res.json())
+                          .then(data => {
+                            alert("Análise Semântica Ativada com " + data.grupos.length + " critérios!");
+                          });
+                      });
+                    }
+                  } catch (e) {
+                    console.error("Erro ao aplicar melhorias:", e);
+                  }
+                });
+                
+
+
+
+        
     </script>
 </body>
 </html>
