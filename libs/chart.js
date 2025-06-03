@@ -1,1 +1,1 @@
-// Chart.js lib content
+// Chart.js placeholder

@@ -27,6 +27,91 @@
         "acompanhar ciclo",
         "manuseio de CNC"
       ]
+    },
+    {
+      "criterio": "Comandos CNC",
+      "peso": 2,
+      "palavrasChave": [
+        "Fanuc",
+        "Fanuc 0i",
+        "Fanuc 31i",
+        "Siemens",
+        "Sinumerik",
+        "Fagor",
+        "Mitsubishi",
+        "Meldas",
+        "Okuma",
+        "OSP",
+        "Mazatrol",
+        "Heidenhain",
+        "Mach3",
+        "Mach4",
+        "Haas",
+        "Brother",
+        "DMG Mori",
+        "CELOS",
+        "Centroid",
+        "NUM",
+        "Hurco",
+        "GSK"
+      ]
+    },
+    {
+      "criterio": "Setup e Prepara\u00e7\u00e3o",
+      "peso": 3,
+      "palavrasChave": [
+        "setup",
+        "preparar",
+        "troca de ferramentas",
+        "libera\u00e7\u00e3o de m\u00e1quina",
+        "ajuste de m\u00e1quina",
+        "preset",
+        "zerar pe\u00e7a",
+        "parametrizar m\u00e1quina"
+      ]
+    },
+    {
+      "criterio": "Multifuncionalidade",
+      "peso": 2,
+      "palavrasChave": [
+        "multifuncional",
+        "polivalente",
+        "perfil vers\u00e1til",
+        "atua em v\u00e1rias fun\u00e7\u00f5es",
+        "revezamento",
+        "multitarefa",
+        "flex\u00edvel",
+        "v\u00e1rios setores"
+      ]
+    },
+    {
+      "criterio": "Medi\u00e7\u00e3o e Desenho T\u00e9cnico",
+      "peso": 2,
+      "palavrasChave": [
+        "leitura de desenho",
+        "desenho t\u00e9cnico",
+        "metrologia",
+        "controle dimensional",
+        "paqu\u00edmetro",
+        "micr\u00f4metro",
+        "s\u00fabito",
+        "instrumento de medi\u00e7\u00e3o",
+        "toler\u00e2ncia",
+        "ajuste",
+        "interpreta\u00e7\u00e3o de desenho"
+      ]
+    },
+    {
+      "criterio": "Tipos de M\u00e1quina CNC",
+      "peso": 1,
+      "palavrasChave": [
+        "torno cnc",
+        "centro de usinagem",
+        "ret\u00edfica cnc",
+        "fresadora cnc",
+        "eletroeros\u00e3o",
+        "torno vertical"
+      ]
     }
   ]
 }

@@ -1,1 +1,1 @@
-// PDF.js lib content
+// PDF.js placeholder
