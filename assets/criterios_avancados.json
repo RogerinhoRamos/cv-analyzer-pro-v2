@@ -1,0 +1,32 @@
+{
+  "grupos": [
+    {
+      "criterio": "Programa\u00e7\u00e3o CNC",
+      "peso": 3,
+      "palavrasChave": [
+        "programar",
+        "programa\u00e7\u00e3o",
+        "editar programa",
+        "desenvolver programa",
+        "inserir c\u00f3digo",
+        "G-code",
+        "M-code",
+        "alterar programa"
+      ]
+    },
+    {
+      "criterio": "Opera\u00e7\u00e3o CNC",
+      "peso": 3,
+      "palavrasChave": [
+        "operar",
+        "opera\u00e7\u00e3o",
+        "centro de usinagem",
+        "m\u00e1quina CNC",
+        "c\u00e9lula de usinagem",
+        "c\u00e9lula robotizada",
+        "acompanhar ciclo",
+        "manuseio de CNC"
+      ]
+    }
+  ]
+}
