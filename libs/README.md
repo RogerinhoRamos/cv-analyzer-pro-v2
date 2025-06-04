@@ -4,7 +4,7 @@ Esta pasta deve conter 4 arquivos:
 pdf.min.js
 pdf.worker.min.js
 chart.min.js
-jspdf.umd.min.js
+jspdf.min.js
 
 Baixe de:
 
