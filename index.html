@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    
+    <link rel="icon" href="data:,">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📊 CV Analyzer Pro - Sistema Completo</title>
     
-    <!-- PDF.js -->
-    <script src="libs/pdf.js"></script>
+   <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
+
+    
     <script>
         // Configurar PDF.js worker
         if (typeof pdfjsLib !== 'undefined') {
@@ -14,11 +19,13 @@
         }
     </script>
     
-    <!-- Chart.js -->
-    <script src="libs/chart.js"></script>
     
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+
     <!-- jsPDF -->
-    <script src="libs/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
     
     <style>
         * {
@@ -670,6 +677,7 @@
         }
     </style>
 </head>
+    
 <body>
     <div class="container">
         <div class="header">
